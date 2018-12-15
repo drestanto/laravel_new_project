@@ -1,0 +1,51 @@
+email activation
+https://yoesuv.blogspot.co.id/2016/10/email-aktifasiverifikasi-dengan-laravel.html
+email setup : https://www.youtube.com/watch?v=oj0FWrNsr-4
+
+Login via email or ...
+https://laracasts.com/discuss/channels/laravel/53-login-via-email-or-username
+
+Polymorph relationship
+http://www.easylaravelbook.com/blog/2015/01/21/creating-polymorphic-relations-in-laravel-5/
+
+PDF maker (from html code)
+https://github.com/barryvdh/laravel-dompdf
+
+File viewer
+http://viewerjs.org/
+https://stackoverflow.com/questions/32048818/how-to-use-pdf-js-or-viewerjs-to-display-pdf-in-browser
+
+Excel export
+https://github.com/Maatwebsite/Laravel-Excel
+http://www.maatwebsite.nl/laravel-excel/docs/blade
+
+Multiple files upload
+http://laraveldaily.com/upload-multiple-files-laravel-5-4/
+https://laracasts.com/discuss/channels/general-discussion/multiple-upload-with-laravel
+https://www.youtube.com/watch?v=6ntf5P3wvz4
+
+Autocomplete Search
+https://www.youtube.com/watch?v=fBAjOyQmUDY
+simple code : https://gist.github.com/imranismail/10200241
+Forms & HTML : https://laravelcollective.com/docs/5.4/html
+other AJAX : https://www.youtube.com/watch?v=MtW86vVWhtU&list=PLe30vg_FG4OT3TiyqC9tLdIGDphI5FHM4
+
+Carbon Time
+http://carbon.nesbot.com/docs/
+
+Dropdown AJAX
+https://www.youtube.com/watch?v=N5ctY9nPt9o
+https://gitlab.com/Bons/laravel5.3_dynamic_dropdown/blob/master/readme.md
+
+Get Client places
+https://stackoverflow.com/questions/6999175/php-how-to-check-if-the-client-is-local
+???
+
+Rapor Chart
+https://stackoverflow.com/questions/34516224/not-drawing-null-values-using-chart-js
+https://stackoverflow.com/questions/30570402/how-to-add-an-empty-data-point-to-a-linechart-on-chart-js
+
+Chart.js
+https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js ((This linnk works))
+https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js ((not working. Why??))
+https://cdnjs.com/libraries/Chart.js
