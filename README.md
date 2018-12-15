@@ -1,51 +1,72 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Laravel Project
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## Prolog
 
-## About Laravel
+Pull new project from here. Laravel version = 5.7
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+## Set Up
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Installation
+1. Install composer, mysql<br>
+Ubuntu : https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-16-04<br>
+Windows : http://webdevzoom.com/how-to-install-composer-on-windows/<br>
+http://www.tomshardware.com/faq/id-3682255/install-mysql-windows.html
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+### Get the project
+2. Make an empty directory for the project
+3. In the empty directory, run this command to pull the project :
+```
+git init
+git remote add origin https://github.com/drestanto/laravel_new_project.git
+git pull origin master
+```
+  Input your gitlab username and password
+4. Install composer inside the project :
+```
+composer install
+```
 
-## Learning Laravel
+### Database Set-up
+5. Open mysql, make a new database :
+```
+CREATE DATABASE database_name
+```
+6. Make .env file inside the directory. Copy everything from the .env.example <br>
+   Setup your DB_DATABASE, DB_USERNAME, and DB_PASSWORD <br>
+   Set APP_KEY=base64:CkaIOp8tWWYvDrn/hV7OaDyP7wAtjpq7BZfYowH+m7o=<br>
+   Set Email
+```
+	MAIL_DRIVER=smtp
+	MAIL_HOST=smtp.gmail.com
+	MAIL_PORT=587
+	MAIL_USERNAME=youremail@web.com
+	MAIL_PASSWORD=yourpassword
+	MAIL_ENCRYPTION=tls
+```
+In this step, choose either one :
+* If you want a new one (a clean database) <br>
+Migrate from the project, run artisan command :
+```
+php artisan migrate
+```
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+* If you want to use existing mock up database <br>
+Copy database from simpensql.sql to your database :
+```
+mysql -u username -p database_name < simpensql.sql
+```
+Input your mysql password
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
 
-## Laravel Sponsors
+### Run the program
+8. Run artisan command :
+```
+php artisan serve
+```
+9. Open browser, link = localhost:8000
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+<hr>
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
+## Tutorial
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+https://laravel.com/docs/5.7/
